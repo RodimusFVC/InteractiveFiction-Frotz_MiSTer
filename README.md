@@ -1,12 +1,14 @@
-# Frotz_MiSTer
+# InteractiveFiction-Frotz_MiSTer
 
 A native Z-machine interpreter for MiSTer: Infocom's interactive fiction run directly in the FPGA (no soft CPU,
 no ARM software). The interpreter, screen model and save format follow Frotz and the Z-Machine Standard 1.1.
 
-**Status:** in development. Versions 1–5, 7 and 8 run, checked in simulation instruction by instruction and screen by
-screen against Frotz 2.55 on every Infocom V1–V5 story (V3–V5 also played on hardware). Version 6 (Zork Zero, Shogun,
-Journey, Arthur) with its pictures (MCGA, EGA, CGA, Blorb) and the Zork Zero font runs in simulation, every screen
-identical to the reference; Zork Zero also played on hardware.
+**Status:** Z-machine versions 1–8 run, checked in simulation instruction by instruction and screen by screen against
+Frotz 2.55 on every Infocom story (V1–V6) and the Czech and Praxix test suites (V7, V8). Played on hardware: Zork I,
+Nord and Bert, Beyond Zork, Zork Zero, Arthur, Border Zone, Sherlock among others, with V6 pictures (Blorb, EGA, CGA),
+Blorb sound (Sherlock's Big Ben), the mouse (Zork Zero's compass, Beyond Zork's map), timed input (Border Zone,
+Arthur) and Quetzal save / restore. Not yet heard on hardware: beeps (checked in simulation) and Lurking Horror's
+sounds.
 
 ## Install
 
