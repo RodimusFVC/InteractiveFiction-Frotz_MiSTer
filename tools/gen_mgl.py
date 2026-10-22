@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-# The core goes in _InteractiveFiction/cores/ (hidden from the menu: Main lists only _ folders; as _VCR does).
+# The core goes in _RodimusCores/_InteractiveFiction/cores/ (hidden from the menu: Main lists only _ folders; as _VCR does).
 # Writes the MiSTer .mgl launchers for Frotz_MiSTer from a story archive sorted by tools/sort_archive.py
 # (games/Frotz/<Title>/<story files + pictures>, games/Frotz/_Unfinished/<Title>/...). Output = releases/, whose
-# contents the release automation deploys into _InteractiveFiction/ (the project's InteractiveFiction- prefix):
+# contents the Rodimus_MiSTer_DB custom database deploys into _RodimusCores/_InteractiveFiction/ (MGL <rbf> paths are from the SD root):
 #   <Title>.mgl                                    main release (Solid Gold where there is one)
 #   _alternatives/_<Title>/<Title> (<release>).mgl every other release
 #   _Unfinished/<Title> (<release>).mgl
@@ -37,7 +37,7 @@ def rank(m, path):                                     # main release: Solid Gol
     return (tag.startswith("Solid Gold"), plain, num, serial, not suf)
 
 def mgl(path, story, pics, snd=()):
-    lines = ["<mistergamedescription>", "\t<rbf>_InteractiveFiction/cores/Frotz</rbf>"]
+    lines = ["<mistergamedescription>", "\t<rbf>_RodimusCores/_InteractiveFiction/cores/Frotz</rbf>"]
     files = [(2, p) for p in list(pics) + list(snd)] + [(3, f) for f in TOPAZ] + [(1, story)]   # delay (s) = after
                                                        # the previous item: 1 for the core to start
     assert len(files) <= MGL_MAX, f"{path}: {len(files)} items, Main keeps {MGL_MAX}"

@@ -14,8 +14,8 @@ sounds.
 
 | What | Where on the SD card |
 |---|---|
-| The core (`Frotz_<date>.rbf`) | `_InteractiveFiction/cores/` (make the folders; `cores` is hidden from the menu) |
-| Launchers (`releases/`: `*.mgl`, `_alternatives/`, `_Unfinished/`) | `_InteractiveFiction/`: one per game (the final release, Solid Gold where there is one); other releases in `_alternatives/_<Title>/`; unreleased games in `_Unfinished/` |
+| The core (`Frotz_<date>.rbf`) | `_RodimusCores/_InteractiveFiction/cores/` (make the folders; `cores` is hidden from the menu) |
+| Launchers (`releases/`: `*.mgl`, `_alternatives/`, `_Unfinished/`) | `_RodimusCores/_InteractiveFiction/`: one per game (the final release, Solid Gold where there is one); other releases in `_alternatives/_<Title>/`; unreleased games in `_Unfinished/` |
 | Stories and pictures | `games/Frotz/<Title>/`, unreleased games in `games/Frotz/_Unfinished/<Title>/` (`tools/sort_archive.py` sorts a flat Infocom archive into this layout) |
 | Font (optional) | `games/Frotz/Fonts/AmigaTopazUnicodeRus.ttf`: **Amiga Topaz** by dMG, downloaded by you from [fonts2u.com](https://fonts2u.com/amiga-topaz-unicode-rus.font) (not included); the launchers load it for every game (V6 then uses Amiga Frotz's layout). Use the file exactly as downloaded; the core reads TrueType files itself. Without it the core uses its built-in font. **Flathead** by Kawa (`FlatheadRegular.ttf` / `FlatheadMono.ttf`, the MS-DOS Infocom MCGA font; [IF Archive](https://ifarchive.org/indexes/if-archive/infocom/fonts/): `flatheadregular.zip` holds both) also works, through Load Font, when Topaz isn't loaded |
 | Saves | `saves/Frotz/<story>.sav`, created automatically |

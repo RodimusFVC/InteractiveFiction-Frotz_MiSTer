@@ -1,5 +1,5 @@
 <mistergamedescription>
-	<rbf>_InteractiveFiction/cores/Frotz</rbf>
+	<rbf>_RodimusCores/_InteractiveFiction/cores/Frotz</rbf>
 	<file delay="1" type="f" index="3" path="Fonts/AmigaTopazUnicodeRus.ttf"/>
 	<file delay="0" type="f" index="1" path="Zork I/Zork I (Release 15).z3"/>
 </mistergamedescription>
