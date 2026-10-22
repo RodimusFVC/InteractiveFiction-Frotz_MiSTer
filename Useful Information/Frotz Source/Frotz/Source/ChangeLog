@@ -1,0 +1,27 @@
+2026-10-01  Amiga Release 20 (Frotz 2.55)
+
+  * Fixed verification, restart, saving and restoring for games packaged in
+    Blorb files (.zblorb and .zlb).
+  * Restored sound effects loaded from separate Infocom sample files and
+    fixed playback of supported sounds embedded in Blorb files.
+  * Fixed default save, transcript, recording and auxiliary filenames in
+    FrotzStdIO. Long game paths and filenames no longer cause crashes or
+    overwrite memory.
+  * Games can save and load auxiliary files without a filename prompt when
+    they request it.
+  * Fixed incorrect colours and picture rendering, including colour display
+    on public screens.
+  * Fixed crashes when resizing a window while editing a full input line.
+  * Damaged resource, preferences and sound-name files no longer cause the
+    identified crashes or hangs.
+  * Fixed dialog return values so requester choices are handled correctly.
+  * Removed the ineffective -R option and old-save Preferences checkbox.
+    Saving and restoring use Quetzal format; pre-Quetzal saves remain
+    unsupported.
+
+Amiga Release 19 (Frotz 2.55)
+
+  * Updated the interpreter to Frotz 2.55, bringing upstream game
+    compatibility improvements and bug fixes.
+  * Save and restore use Quetzal format. Legacy pre-Quetzal saves are no
+    longer supported.

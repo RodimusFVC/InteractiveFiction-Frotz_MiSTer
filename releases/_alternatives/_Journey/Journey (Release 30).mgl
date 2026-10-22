@@ -1,0 +1,9 @@
+<mistergamedescription>
+	<rbf>_InteractiveFiction/cores/Frotz</rbf>
+	<file delay="1" type="f" index="2" path="Journey/Journey.blb"/>
+	<file delay="0" type="f" index="2" path="Journey/Journey.eg1"/>
+	<file delay="0" type="f" index="2" path="Journey/Journey.eg2"/>
+	<file delay="0" type="f" index="2" path="Journey/Journey.cg1"/>
+	<file delay="0" type="f" index="3" path="Fonts/AmigaTopazUnicodeRus.ttf"/>
+	<file delay="0" type="f" index="1" path="Journey/Journey (Release 30).z6"/>
+</mistergamedescription>

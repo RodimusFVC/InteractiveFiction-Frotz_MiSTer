@@ -1,0 +1,59 @@
+Short:        Frotz 2.55R20 Infocom game interpreter
+Author:       Stefan Jokisch, David Kinder, Ingo Paschke
+Uploader:     ipaschke@lpclabs.de
+Type:         game/role
+Version:      255r20
+Replaces:     game/role/Frotz.lha; game/role/Frotz232r11.lha
+Architecture: m68k-amigaos >= 2.0.4
+
+Frotz is a fast and portable Infocom and Z-machine interpreter. The
+original MS-DOS version was written by Stefan Jokisch, the Amiga port
+by David Kinder and Ingo Paschke. The feature list is:
+
+    - support for V1 to V8 games
+    - timed input ('Border Zone')
+    - built-in graphic font ('Beyond Zork')
+    - mouse support ('Beyond Zork' and all V6 games)
+    - function key support including number pad keys ('Beyond Zork')
+    - command line editing and history
+    - small save files in Quetzal format
+    - switch for setting the Tandy bit
+    - sound effects ('Lurking Horror' and 'Sherlock')
+    - cheat functions
+    - multiple UNDO (via hot key, even for old V1 to V4 games)
+    - input line recording and playback (via hot key)
+    - support for European characters ('Zork I German')
+    - underlined, reverse and boldface text
+    - fast performance without virtual memory
+    - V6 graphical games with picture display
+
+Changes in Release 20:
+
+    - Fixed verification, restart, saving and restoring for games packaged
+      in Blorb files (.zblorb and .zlb).
+    - Restored sound effects loaded from separate Infocom sample files and
+      fixed playback of supported sounds embedded in Blorb files.
+    - Fixed default save, transcript, recording and auxiliary filenames in
+      FrotzStdIO. Long game paths and filenames no longer cause crashes or
+      overwrite memory.
+    - Games can save and load auxiliary files without a filename prompt when
+      they request it.
+    - Fixed incorrect colours and picture rendering, including colour
+      display on public screens.
+    - Fixed crashes when resizing a window while editing a full input line.
+    - Damaged resource, preferences and sound-name files no longer cause the
+      identified crashes or hangs.
+    - Fixed dialog return values so requester choices are handled correctly.
+    - Removed the ineffective -R option and old-save Preferences checkbox.
+      Saving and restoring use Quetzal format; pre-Quetzal saves remain
+      unsupported.
+
+Changes in Release 19:
+
+    - Updated the interpreter to Frotz 2.55, bringing upstream game
+      compatibility improvements and bug fixes.
+    - Save and restore use Quetzal format. Legacy pre-Quetzal saves are no
+      longer supported.
+
+Please send questions and bug reports regarding this port to
+ipaschke@lpclabs.de.

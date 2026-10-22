@@ -1,0 +1,7 @@
+Included here are Robert Fisher's 16 colour MagicWB icons. The palette
+used is that proposed by Roman Patzner as a 16 colour extension to MagicWB.
+If you don't already have this palette, an icon (SetColours) can be clicked
+on. This uses SetPens by Joseph Luk, which requires at least Workbench 3.0.
+The palette itself is stored in the text file Icon.palette.
+
+David

@@ -1,0 +1,25 @@
+FSRC = buffer.c err.c fastmem.c files.c getopt.c hotkey.c input.c main.c \
+       math.c object.c process.c quetzal.c random.c redirect.c screen.c \
+       sound.c stream.c table.c text.c variable.c
+ASRC = amiga.c amiga_list.c amiga_prefs.c amiga_sound.c amiga_start.c checkbox.c blorblib.c
+SSRC = amiga_stdio.c blorblib.c
+FOBJ = $(FSRC:"*.c":"*.o")
+AOBJ = $(ASRC:"*.c":"*.o")
+SOBJ = $(SSRC:"*.c":"*.o")
+
+all : Frotz
+
+Frotz : $(FOBJ) $(AOBJ)
+    dcc %(right) -o %(left) -l bgui -l reqtools
+
+FrotzStdIO : $(FOBJ) $(SOBJ)
+    dcc %(right) -o %(left)
+
+$(AOBJ) : $(ASRC)
+    dcc -c -mi %(right) -o %(left)
+
+$(SOBJ) : $(SSRC)
+    dcc -c -mi %(right) -o %(left)
+
+$(FOBJ) : $(FSRC)
+    dcc -c %(right) -o %(left)
